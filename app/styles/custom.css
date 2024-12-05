@@ -1,0 +1,13 @@
+.card-container {
+  perspective: 1000px;
+}
+
+.card-container:hover .card {
+  transform: scale(1.05);
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+  transform-style: preserve-3d;
+}
+
