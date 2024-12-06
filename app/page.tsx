@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <main className="container mx-auto p-4 font-sans">
       <h1 className="text-2xl font-bold mb-4 font-sans">Fast Food Deals</h1>
-      <h2 className="text-1xl mb-4 font-sans">Meals for no more than $10 (pricing may vary by location)</h2>
+      <h2 className="text-1xl mb-4 font-sans">Fast food meal deals for no more than $10 (pricing may vary by location)</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
         <div>
           <Label htmlFor="search">Search</Label>
@@ -119,37 +119,44 @@ export default function Home() {
         </Button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filteredDeals.map((deal) => (
-          <div key={deal.id} className="card-container">
-            <Card className="bg-teal-50 border-2 card transition-transform duration-300 ease-in-out hover:scale-105 h-[200px]">
-              <CardHeader className="flex flex-row justify-between items-center">
-                <CardTitle>{deal.restaurant}</CardTitle>
-                {deal.requiresMembership && (
-                  <Badge variant="secondary" className="bg-yellow-200 text-yellow-800">
-                    Acct. Req&apos;d.
-                  </Badge>
-                )}
-              </CardHeader>
-              <CardContent>
-                <p className="whitespace-pre-line">{deal.description}</p>
-                <p className="font-bold">${deal.price.toFixed(2)}</p>
-                {deal.isVegetarian && <p className="text-green-600">Vegetarian</p>}
-                {deal.url && (
-                  <a
-                    href={deal.url.startsWith('http') ? deal.url : `https://${deal.url}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Visit Website
-                  </a>
-                )}
-              </CardContent>
-            </Card>
-          </div>
-        ))}
-      </div>
+      {filteredDeals.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {filteredDeals.map((deal) => (
+            <div key={deal.id} className="card-container">
+              <Card className="bg-teal-50 border-2 card transition-transform duration-300 ease-in-out hover:scale-105 h-[200px]">
+                <CardHeader className="flex flex-row justify-between items-center">
+                  <CardTitle>{deal.restaurant}</CardTitle>
+                  {deal.requiresMembership && (
+                    <Badge variant="secondary" className="bg-yellow-200 text-yellow-800">
+                      Acct. Req&apos;d.
+                    </Badge>
+                  )}
+                </CardHeader>
+                <CardContent>
+                  <p className="whitespace-pre-line">{deal.description}</p>
+                  <p className="font-bold">${deal.price.toFixed(2)}</p>
+                  {deal.isVegetarian && <p className="text-green-600">Vegetarian</p>}
+                  {deal.url && (
+                    <a
+                      href={deal.url.startsWith('http') ? deal.url : `https://${deal.url}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline"
+                    >
+                      Visit Website
+                    </a>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="text-center py-8">
+          <p className="text-xl font-semibold text-gray-700">No deals meet your requirements!</p>
+          <p className="mt-2 text-gray-500">Try adjusting your filters to see more deals.</p>
+        </div>
+      )}
 
       <div className="flex justify-end mb-4 mt-4">
         <Button onClick={() => window.location.href = 'https://buymeacoffee.com/maddiestein'} variant="outline">
