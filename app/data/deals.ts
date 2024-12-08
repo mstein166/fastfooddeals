@@ -6,6 +6,7 @@ export interface Deal {
   isVegetarian: boolean;
   url?: string;
   requiresMembership: boolean;
+  logoUrl: string;
 }
 
 export const deals: Deal[] = [
@@ -17,6 +18,7 @@ export const deals: Deal[] = [
     isVegetarian: false,
     url: "https://www.mcdonalds.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg",
   },
 
   {
@@ -27,6 +29,7 @@ export const deals: Deal[] = [
     isVegetarian: false,
     url: "https://www.mcdonalds.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg",
   },
 
   {
@@ -37,6 +40,7 @@ export const deals: Deal[] = [
     isVegetarian: false,
     url: "https://www.mcdonalds.com",
     requiresMembership: true,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg",
   },
 
   {
@@ -46,7 +50,8 @@ export const deals: Deal[] = [
     price: 5.00,
     isVegetarian: false,
     url: "https://www.bk.com",
-    requiresMembership: true,
+    requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/90/Burger_King_1969_logo.svg",
   },
 
   {
@@ -56,7 +61,8 @@ export const deals: Deal[] = [
     price: 5.00,
     isVegetarian: false,
     url: "https://www.bk.com",
-    requiresMembership: true,
+    requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/90/Burger_King_1969_logo.svg",
   },
 
   {
@@ -66,7 +72,8 @@ export const deals: Deal[] = [
     price: 7.99,
     isVegetarian: false,
     url: "https://www.bk.com",
-    requiresMembership: true,
+    requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/90/Burger_King_1969_logo.svg",
   },
 
   {
@@ -76,7 +83,8 @@ export const deals: Deal[] = [
     price: 7.49,
     isVegetarian: false,
     url: "https://www.bk.com",
-    requiresMembership: true,
+    requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/90/Burger_King_1969_logo.svg",
   },
 
   {
@@ -87,138 +95,164 @@ export const deals: Deal[] = [
     isVegetarian: false,
     url: "https://www.bk.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/90/Burger_King_1969_logo.svg",
   },
 
   {
     id: "9",
+    restaurant: "Burger King",
+    description: "BOGO Original Chicken Sandwich",
+    price: 6.99,
+    isVegetarian: false,
+    url: "https://www.bk.com",
+    requiresMembership: true,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/90/Burger_King_1969_logo.svg",
+  },
+
+  {
+    id: "10",
     restaurant: "Taco Bell",
     description: "Classic Luxe Box\n(Beef Burrito/Beef Taco/Chips/Drink)",
     price: 5.00,
     isVegetarian: false,
     url: "https://www.tacobell.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/b/b3/Taco_Bell_2016.svg",
   },
 
   {
-    id: "10",
+    id: "11",
     restaurant: "Taco Bell",
     description: "Supreme Luxe Box\n(Gordita Supreme/Beef Burrito/Beef Taco/Chips/Drink)",
     price: 7.00,
     isVegetarian: false,
     url: "https://www.tacobell.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/b/b3/Taco_Bell_2016.svg",
   },
   {
-    id: "11",
+    id: "12",
     restaurant: "Taco Bell",
     description: "Premium Luxe Box\n(Chicken Burrito/Chicken Taco/Beef Taco/Chips/Drink)",
     price: 7.00,
     isVegetarian: false,
     url: "https://www.tacobell.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/b/b3/Taco_Bell_2016.svg",
   },
   {
-    id: "12",
+    id: "13",
     restaurant: "Taco Bell",
     description: "Chalupa Bell Bundle\n(Chalupa Supreme/Burrito/Chicken Taco/Fries/Drink)",
     price: 9.99,
     isVegetarian: false,
     url: "https://www.tacobell.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/b/b3/Taco_Bell_2016.svg",
   },
   {
-    id: "13",
+    id: "14",
     restaurant: "Wendy's",
     description: "Spicy Chicken Sandwich",
     price: 4.69,
     isVegetarian: false,
     url: "https://www.wendys.com",
-    requiresMembership: true,
+    requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/3/32/Wendy%27s_full_logo_2012.svg",
   },
   {
-    id: "14",
+    id: "15",
     restaurant: "Wendy's",
     description: "Bacon Double Stack Biggie Bag\n(Bacon Burger/Nuggets/Fries/Drink)",
     price: 8.00,
     isVegetarian: false,
     url: "https://www.wendys.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/3/32/Wendy%27s_full_logo_2012.svg",
   },
   {
-    id: "15",
+    id: "16",
     restaurant: "Wendy's",
     description: "Crispy Chicken BLT Biggie Bag\n(Chicken BLT/Nuggets/Fries/Drink)",
     price: 8.00,
     isVegetarian: false,
     url: "https://www.wendys.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/3/32/Wendy%27s_full_logo_2012.svg",
   },
   {
-    id: "16",
+    id: "17",
     restaurant: "Wendy's",
     description: "Crispy Chicken Biggie Bag\n(Chicken Sandwich/Nuggets/Fries/Drink)",
     price: 7.00,
     isVegetarian: false,
     url: "https://www.wendys.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/3/32/Wendy%27s_full_logo_2012.svg",
   },
   {
-    id: "17",
+    id: "18",
     restaurant: "Wendy's",
     description: "Jr. Bacon Cheeseburger Biggie Bag\n(Bacon Cheeseburger/Nuggets/Fries/Drink)",
     price: 7.00,
     isVegetarian: false,
     url: "https://www.wendys.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/3/32/Wendy%27s_full_logo_2012.svg",
   },
 
   {
-    id: "18",
+    id: "19",
     restaurant: "Wendy's",
     description: "Double Stack Biggie Bag\n(Jr. Double Cheeseburger/Nuggets/Fries/Drink)",
     price: 7.00,
     isVegetarian: false,
     url: "https://www.wendys.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/3/32/Wendy%27s_full_logo_2012.svg",
   },
 
   {
-    id: "19",
+    id: "20",
     restaurant: "Wendy's",
     description: "Jr. Cheeseburger\n(Jr. Cheeseburger/Nuggets/Fries/Drink)",
     price: 5.00,
     isVegetarian: false,
     url: "https://www.wendys.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/3/32/Wendy%27s_full_logo_2012.svg",
   },
 
   {
-    id: "20",
+    id: "21",
     restaurant: "Applebee's",
     description: "Really Big Meal Deal\n(Burger or Sandwich/Fries/Drink)",
     price: 9.99,
     isVegetarian: false,
     url: "https://www.applebees.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/06/Red_apple.svg",
   },
 
   {
-    id: "21",
+    id: "22",
     restaurant: "KFC",
     description: "Taste of KFC 2pc. Deal\n(2pc. Fried Chicken/Mashed Potatoes/Gravy/Biscuit)",
     price: 5.00,
     isVegetarian: false,
     url: "https://www.kfc.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/5/57/KFC_logo-image.svg",
   },
 
   {
-    id: "22",
+    id: "23",
     restaurant: "KFC",
     description: "Saucy Chicken Sandwich Combo\n(Chicken Sandwich/Side/Drink - Digital Exclusive)",
     price: 9.99,
     isVegetarian: false,
     url: "https://www.kfc.com",
     requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/en/5/57/KFC_logo-image.svg",
   },
 ];
