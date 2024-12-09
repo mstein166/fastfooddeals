@@ -255,4 +255,26 @@ export const deals: Deal[] = [
     requiresMembership: false,
     logoUrl: "https://upload.wikimedia.org/wikipedia/en/5/57/KFC_logo-image.svg",
   },
+
+  {
+    id: "24",
+    restaurant: "Pizza Hut",
+    description: "My Hut Box: Personal Pizza & Side\n(2-Topping Personal Pan Pizza & Fries/Wings)",
+    price: 8.99,
+    isVegetarian: true,
+    url: "https://www.pizzahut.com",
+    requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/1/17/Pizza_Hut_international_logo_2014.svg",
+  },
+
+  {
+    id: "25",
+    restaurant: "Pizza Hut",
+    description: "My Hut Box: Half Melt & Side\n(Chicken/Meat/Pepperoni Half-Melt & Fries/Wings)",
+    price: 8.99,
+    isVegetarian: true,
+    url: "https://www.pizzahut.com",
+    requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/1/17/Pizza_Hut_international_logo_2014.svg",
+  },
 ];

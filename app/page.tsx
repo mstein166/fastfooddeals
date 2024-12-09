@@ -52,8 +52,22 @@ export default function Home() {
 
   return (
     <main className="container mx-auto p-4 font-sans">
-      <h1 className="text-2xl font-bold mb-4 font-sans">Fast Food Deals</h1>
-      <h2 className="text-1xl mb-4 font-sans">Looking for meal deals or offers for no more than $10? Check out what&apos;s currently available at the biggest national fast food chains (pricing may vary by location)</h2>
+      <Image
+        src="/fast-food.png"  // Path relative to the public folder
+        alt="Fast Food Deals Logo"
+        className="w-24 h-24 mb-4"
+      />
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-2xl font-bold font-sans">Fast Food Deals</h1>
+        <Button onClick={() => window.location.href = 'https://buymeacoffee.com/maddiestein'}
+          variant="outline"
+          className="border-green-500 text-green-900 hover:bg-green-50 pulse-on-hover"
+        >
+          Contribute here!
+        </Button>
+      </div>
+      <h2 className="text-1xl mb-4 font-sans">Looking for meal deals or offers for no more than <span className="font-bold">$10?</span> <br />
+        Check out what&apos;s currently available at the biggest national fast food chains (pricing may vary by location)</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
         <div>
           <Label htmlFor="search">Search</Label>
@@ -161,12 +175,6 @@ export default function Home() {
             </Card>
           </div>
         ))}
-      </div>
-
-      <div className="flex justify-end mb-4 mt-4">
-        <Button onClick={() => window.location.href = 'https://buymeacoffee.com/maddiestein'} variant="outline">
-          Contribute here!
-        </Button>
       </div>
 
       <div className="text-center font-bold mt-8 mb-4">
