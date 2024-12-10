@@ -52,19 +52,21 @@ export default function Home() {
 
   return (
     <main className="container mx-auto p-4 font-sans">
-      <Image
-        src="/fast-food.png"  // Path relative to the public folder
-        alt="Fast Food Deals Logo"
-        className="w-24 h-24 mb-4"
-      />
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold font-sans">Fast Food Deals</h1>
-        <Button onClick={() => window.location.href = 'https://buymeacoffee.com/maddiestein'}
-          variant="outline"
-          className="border-green-500 text-green-900 hover:bg-green-50 pulse-on-hover"
-        >
-          Contribute here!
-        </Button>
+      <div className="flex items-center gap-4 mb-4">
+        <Image
+          src="/fast-food.png"
+          alt="Fast Food Deals Logo"
+          className="w-24 h-24"
+        />
+        <div className="flex-1 flex justify-between items-center">
+          <h1 className="text-4xl font-bold font-sans">Fast Food Deals</h1>
+          <Button onClick={() => window.location.href = 'https://buymeacoffee.com/maddiestein'}
+            variant="outline"
+            className="border-green-500 text-green-900 hover:bg-green-50 pulse-on-hover -mt-3"
+          >
+            Contribute here!
+          </Button>
+        </div>
       </div>
       <h2 className="text-1xl mb-4 font-sans">Looking for meal deals or offers for no more than <span className="font-bold">$10?</span> <br />
         Check out what&apos;s currently available at the biggest national fast food chains (pricing may vary by location)</h2>
