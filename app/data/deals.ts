@@ -272,9 +272,21 @@ export const deals: Deal[] = [
     restaurant: "Pizza Hut",
     description: "My Hut Box: Half Melt & Side\n(Chicken/Meat/Pepperoni Half-Melt & Fries/Wings)",
     price: 8.99,
-    isVegetarian: true,
+    isVegetarian: false,
     url: "https://www.pizzahut.com",
     requiresMembership: false,
     logoUrl: "https://upload.wikimedia.org/wikipedia/commons/1/17/Pizza_Hut_international_logo_2014.svg",
   },
+
+  {
+    id: "26",
+    restaurant: "Papa John's",
+    description: "1-Topping Carryout Special\n(Large 1-Topping Pizza - Pick Up Only)",
+    price: 9.99,
+    isVegetarian: true,
+    url: "https://www.papajohns.com",
+    requiresMembership: false,
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/92/Papa_Johns_logo.svg",
+  },
+
 ];
