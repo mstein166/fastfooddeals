@@ -17,6 +17,7 @@ import { Slider } from "@/components/ui/slider"
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { deals } from './data/deals'
 import { Badge } from "@/components/ui/badge"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   const [search, setSearch] = useState('')
@@ -52,6 +53,7 @@ export default function Home() {
 
   return (
     <main className="container mx-auto p-4 font-sans">
+      <Analytics />
       <div className="flex items-center gap-4 mb-4">
         <Image
           src="/fast-food.png"
